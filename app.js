@@ -1,19 +1,18 @@
 
-// Set numList to any number and the page will alert you, starting from 0 all the way up to whatever number numList is set to
-let numList = 20;
+// can change petChoices, the order of inputs determines which choice is first second and third
+const petChoices = ["Dogs", "Hamsters", "Pigs"];
 
-
-// for every number in numList, alert the user if even or odd
-for(let i =0; i <= numList; i++) {
-
-    // if number divided by 2 has no remainder, then it's even
-    if(i % 2 === 0) {
-        alert(`${i} is even`);
+for(let i = 0; i <= petChoices.length -1; i++) {
+    // first choice
+    if(i == 0) {
+        alert(`My 1st choice of pet is ${petChoices[i]}`);
     }
-
-
-    // if number dividen by 2 has a remainder, then it's odd
-    else {
-        alert(`${i} is odd`);
+    // second choice
+    if(i == 1) {
+        alert(`My 2nd choice of pet is ${petChoices[i]}`);
+    }
+    // third choice
+    if(i == 2) {
+        alert(`My 3rd choice of pet is ${petChoices[i]}`);
     }
 }
